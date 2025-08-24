@@ -1,0 +1,12 @@
+2025-08-24 16:54:28.597 | INFO     | __main__:run_full_validation:284 - Running full validation for data/raw/initiatives_latest.parquet
+2025-08-24 16:54:28.613 | INFO     | __main__:validate_schema:70 - Validating schema for initiatives
+2025-08-24 16:54:28.615 | INFO     | __main__:validate_data_ranges:133 - Validating data ranges for initiatives
+2025-08-24 16:54:28.621 | INFO     | __main__:run_full_validation:330 - Validation report saved to data/quality_reports/quality_report_initiatives_20250824_165428.json
+2025-08-24 16:54:28.621 | INFO     | __main__:run_full_validation:284 - Running full validation for data/raw/financial_metrics_latest.parquet
+2025-08-24 16:54:28.627 | INFO     | __main__:validate_schema:70 - Validating schema for financial_metrics
+2025-08-24 16:54:28.630 | INFO     | __main__:validate_data_ranges:133 - Validating data ranges for financial_metrics
+2025-08-24 16:54:28.636 | INFO     | __main__:run_full_validation:330 - Validation report saved to data/quality_reports/quality_report_financial_metrics_20250824_165428.json
+2025-08-24 16:54:28.636 | INFO     | __main__:run_full_validation:284 - Running full validation for data/raw/operational_metrics_latest.parquet
+2025-08-24 16:54:28.639 | INFO     | __main__:validate_schema:70 - Validating schema for operational_metrics
+2025-08-24 16:54:28.640 | INFO     | __main__:validate_data_ranges:133 - Validating data ranges for operational_metrics
+2025-08-24 16:54:28.644 | INFO     | __main__:run_full_validation:330 - Validation report saved to data/quality_reports/quality_report_operational_metrics_20250824_165428.json
