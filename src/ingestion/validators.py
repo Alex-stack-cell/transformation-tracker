@@ -1,4 +1,3 @@
-# src/ingestion/validators.py
 """
 Validateurs de qualité des données - Simule les checks AWS Glue Data Quality
 Implémente les data contracts et validation rules
