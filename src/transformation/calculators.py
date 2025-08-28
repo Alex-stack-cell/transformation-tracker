@@ -4,10 +4,9 @@ Focus sur les KPIs critiques pour McKinsey Wave
 """
 
 import pandas as pd
-import numpy as np
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List
 from loguru import logger
 import warnings
 warnings.filterwarnings('ignore')

@@ -1,4 +1,3 @@
-# explore_data.py - Script pour explorer vos données collectées
 import pandas as pd
 from pathlib import Path
 

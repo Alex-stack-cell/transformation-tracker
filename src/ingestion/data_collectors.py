@@ -1,4 +1,3 @@
-# src/ingestion/data_collectors.py
 """
 Collecteurs de données depuis les APIs mock
 Simule l'ingestion de données comme AWS Lambda/Glue
@@ -11,12 +10,13 @@ from pathlib import Path
 from typing import Dict, Optional
 from loguru import logger
 import time
+from config import Config
 
 
 class DataCollector:
     """Classe de base pour la collecte de données"""
 
-    def __init__(self, base_url: str = "http://localhost:8000"):
+    def __init__(self, base_url: str = Config().BASE_URL):
         self.base_url = base_url
         self.data_dir = Path("data")
         self.raw_dir = self.data_dir / "raw"

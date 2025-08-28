@@ -12,8 +12,12 @@ import random
 from data_generators import generate_initiatives
 
 from typing import Dict
+from config import Config
 
-app = FastAPI(title="McKinsey Transformation Data APIs")
+config = Config()
+
+app = FastAPI(title=config.APP_NAME, version=config.APP_VERSION,
+              debug=config.DEBUG)
 fake = Faker()
 
 # Cache des données pour cohérence
@@ -22,7 +26,7 @@ INITIATIVES_CACHE = generate_initiatives()
 
 @app.get("/")
 def root():
-    return {"message": "McKinsey Transformation Data APIs", "version": "1.0.0"}
+    return {"message": config.APP_NAME, "version": config.APP_VERSION}
 
 
 @app.get("/initiatives", response_model=List[InitiativeData])

@@ -96,8 +96,6 @@ class DataQualityValidator:
         for col in unique_cols:
             if col in df.columns:
                 # type: ignore
-                # type: ignore
-                # type: ignore
                 duplicates = df[df[col].duplicated()][col].tolist()
                 if duplicates:
                     duplicate_issues[col] = duplicates[:5]  # Max 5 exemples
@@ -115,9 +113,6 @@ class DataQualityValidator:
                 if null_count > 0:
                     null_issues[col] = {
                         'null_count': int(null_count),  # type: ignore
-                        # type: ignore
-                        # type: ignore
-                        # type: ignore
                         # type: ignore
                         'null_percentage': round(null_count / len(df) * 100, 2)
                     }
